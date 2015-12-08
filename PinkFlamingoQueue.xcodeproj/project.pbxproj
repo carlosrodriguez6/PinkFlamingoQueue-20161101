@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE6D4D4C1C177F4E0048EF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D4B1C177F4E0048EF39 /* main.m */; };
+		AE6D4D4F1C177F4E0048EF39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D4E1C177F4E0048EF39 /* AppDelegate.m */; };
+		AE6D4D521C177F4E0048EF39 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D511C177F4E0048EF39 /* FirstViewController.m */; };
+		AE6D4D551C177F4E0048EF39 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D541C177F4E0048EF39 /* SecondViewController.m */; };
+		AE6D4D581C177F4E0048EF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6D4D561C177F4E0048EF39 /* Main.storyboard */; };
+		AE6D4D5A1C177F4E0048EF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6D4D591C177F4E0048EF39 /* Assets.xcassets */; };
+		AE6D4D5D1C177F4E0048EF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6D4D5B1C177F4E0048EF39 /* LaunchScreen.storyboard */; };
+		AE6D4D681C177F4E0048EF39 /* PinkFlamingoQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D671C177F4E0048EF39 /* PinkFlamingoQueueTests.m */; };
+		AE6D4D731C177F4E0048EF39 /* PinkFlamingoQueueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6D4D721C177F4E0048EF39 /* PinkFlamingoQueueUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE6D4D641C177F4E0048EF39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6D4D3F1C177F4E0048EF39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6D4D461C177F4E0048EF39;
+			remoteInfo = PinkFlamingoQueue;
+		};
+		AE6D4D6F1C177F4E0048EF39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6D4D3F1C177F4E0048EF39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6D4D461C177F4E0048EF39;
+			remoteInfo = PinkFlamingoQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE6D4D471C177F4E0048EF39 /* PinkFlamingoQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkFlamingoQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6D4D4B1C177F4E0048EF39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE6D4D4D1C177F4E0048EF39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE6D4D4E1C177F4E0048EF39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE6D4D501C177F4E0048EF39 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		AE6D4D511C177F4E0048EF39 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		AE6D4D531C177F4E0048EF39 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AE6D4D541C177F4E0048EF39 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AE6D4D571C177F4E0048EF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE6D4D591C177F4E0048EF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE6D4D5C1C177F4E0048EF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE6D4D5E1C177F4E0048EF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6D4D631C177F4E0048EF39 /* PinkFlamingoQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkFlamingoQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6D4D671C177F4E0048EF39 /* PinkFlamingoQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkFlamingoQueueTests.m; sourceTree = "<group>"; };
+		AE6D4D691C177F4E0048EF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6D4D6E1C177F4E0048EF39 /* PinkFlamingoQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkFlamingoQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6D4D721C177F4E0048EF39 /* PinkFlamingoQueueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkFlamingoQueueUITests.m; sourceTree = "<group>"; };
+		AE6D4D741C177F4E0048EF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE6D4D441C177F4E0048EF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D601C177F4E0048EF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D6B1C177F4E0048EF39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE6D4D3E1C177F4E0048EF39 = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D491C177F4E0048EF39 /* PinkFlamingoQueue */,
+				AE6D4D661C177F4E0048EF39 /* PinkFlamingoQueueTests */,
+				AE6D4D711C177F4E0048EF39 /* PinkFlamingoQueueUITests */,
+				AE6D4D481C177F4E0048EF39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE6D4D481C177F4E0048EF39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D471C177F4E0048EF39 /* PinkFlamingoQueue.app */,
+				AE6D4D631C177F4E0048EF39 /* PinkFlamingoQueueTests.xctest */,
+				AE6D4D6E1C177F4E0048EF39 /* PinkFlamingoQueueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE6D4D491C177F4E0048EF39 /* PinkFlamingoQueue */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D4D1C177F4E0048EF39 /* AppDelegate.h */,
+				AE6D4D4E1C177F4E0048EF39 /* AppDelegate.m */,
+				AE6D4D501C177F4E0048EF39 /* FirstViewController.h */,
+				AE6D4D511C177F4E0048EF39 /* FirstViewController.m */,
+				AE6D4D531C177F4E0048EF39 /* SecondViewController.h */,
+				AE6D4D541C177F4E0048EF39 /* SecondViewController.m */,
+				AE6D4D561C177F4E0048EF39 /* Main.storyboard */,
+				AE6D4D591C177F4E0048EF39 /* Assets.xcassets */,
+				AE6D4D5B1C177F4E0048EF39 /* LaunchScreen.storyboard */,
+				AE6D4D5E1C177F4E0048EF39 /* Info.plist */,
+				AE6D4D4A1C177F4E0048EF39 /* Supporting Files */,
+			);
+			path = PinkFlamingoQueue;
+			sourceTree = "<group>";
+		};
+		AE6D4D4A1C177F4E0048EF39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D4B1C177F4E0048EF39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE6D4D661C177F4E0048EF39 /* PinkFlamingoQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D671C177F4E0048EF39 /* PinkFlamingoQueueTests.m */,
+				AE6D4D691C177F4E0048EF39 /* Info.plist */,
+			);
+			path = PinkFlamingoQueueTests;
+			sourceTree = "<group>";
+		};
+		AE6D4D711C177F4E0048EF39 /* PinkFlamingoQueueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D4D721C177F4E0048EF39 /* PinkFlamingoQueueUITests.m */,
+				AE6D4D741C177F4E0048EF39 /* Info.plist */,
+			);
+			path = PinkFlamingoQueueUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE6D4D461C177F4E0048EF39 /* PinkFlamingoQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6D4D771C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueue" */;
+			buildPhases = (
+				AE6D4D431C177F4E0048EF39 /* Sources */,
+				AE6D4D441C177F4E0048EF39 /* Frameworks */,
+				AE6D4D451C177F4E0048EF39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinkFlamingoQueue;
+			productName = PinkFlamingoQueue;
+			productReference = AE6D4D471C177F4E0048EF39 /* PinkFlamingoQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE6D4D621C177F4E0048EF39 /* PinkFlamingoQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6D4D7A1C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueueTests" */;
+			buildPhases = (
+				AE6D4D5F1C177F4E0048EF39 /* Sources */,
+				AE6D4D601C177F4E0048EF39 /* Frameworks */,
+				AE6D4D611C177F4E0048EF39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6D4D651C177F4E0048EF39 /* PBXTargetDependency */,
+			);
+			name = PinkFlamingoQueueTests;
+			productName = PinkFlamingoQueueTests;
+			productReference = AE6D4D631C177F4E0048EF39 /* PinkFlamingoQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE6D4D6D1C177F4E0048EF39 /* PinkFlamingoQueueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6D4D7D1C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueueUITests" */;
+			buildPhases = (
+				AE6D4D6A1C177F4E0048EF39 /* Sources */,
+				AE6D4D6B1C177F4E0048EF39 /* Frameworks */,
+				AE6D4D6C1C177F4E0048EF39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6D4D701C177F4E0048EF39 /* PBXTargetDependency */,
+			);
+			name = PinkFlamingoQueueUITests;
+			productName = PinkFlamingoQueueUITests;
+			productReference = AE6D4D6E1C177F4E0048EF39 /* PinkFlamingoQueueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE6D4D3F1C177F4E0048EF39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Safari Books Online";
+				TargetAttributes = {
+					AE6D4D461C177F4E0048EF39 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					AE6D4D621C177F4E0048EF39 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AE6D4D461C177F4E0048EF39;
+					};
+					AE6D4D6D1C177F4E0048EF39 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AE6D4D461C177F4E0048EF39;
+					};
+				};
+			};
+			buildConfigurationList = AE6D4D421C177F4E0048EF39 /* Build configuration list for PBXProject "PinkFlamingoQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE6D4D3E1C177F4E0048EF39;
+			productRefGroup = AE6D4D481C177F4E0048EF39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE6D4D461C177F4E0048EF39 /* PinkFlamingoQueue */,
+				AE6D4D621C177F4E0048EF39 /* PinkFlamingoQueueTests */,
+				AE6D4D6D1C177F4E0048EF39 /* PinkFlamingoQueueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE6D4D451C177F4E0048EF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6D4D5D1C177F4E0048EF39 /* LaunchScreen.storyboard in Resources */,
+				AE6D4D5A1C177F4E0048EF39 /* Assets.xcassets in Resources */,
+				AE6D4D581C177F4E0048EF39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D611C177F4E0048EF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D6C1C177F4E0048EF39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE6D4D431C177F4E0048EF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6D4D551C177F4E0048EF39 /* SecondViewController.m in Sources */,
+				AE6D4D4F1C177F4E0048EF39 /* AppDelegate.m in Sources */,
+				AE6D4D521C177F4E0048EF39 /* FirstViewController.m in Sources */,
+				AE6D4D4C1C177F4E0048EF39 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D5F1C177F4E0048EF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6D4D681C177F4E0048EF39 /* PinkFlamingoQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6D4D6A1C177F4E0048EF39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6D4D731C177F4E0048EF39 /* PinkFlamingoQueueUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE6D4D651C177F4E0048EF39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE6D4D461C177F4E0048EF39 /* PinkFlamingoQueue */;
+			targetProxy = AE6D4D641C177F4E0048EF39 /* PBXContainerItemProxy */;
+		};
+		AE6D4D701C177F4E0048EF39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE6D4D461C177F4E0048EF39 /* PinkFlamingoQueue */;
+			targetProxy = AE6D4D6F1C177F4E0048EF39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE6D4D561C177F4E0048EF39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE6D4D571C177F4E0048EF39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE6D4D5B1C177F4E0048EF39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE6D4D5C1C177F4E0048EF39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE6D4D751C177F4E0048EF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE6D4D761C177F4E0048EF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE6D4D781C177F4E0048EF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinkFlamingoQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE6D4D791C177F4E0048EF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinkFlamingoQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE6D4D7B1C177F4E0048EF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinkFlamingoQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinkFlamingoQueue.app/PinkFlamingoQueue";
+			};
+			name = Debug;
+		};
+		AE6D4D7C1C177F4E0048EF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinkFlamingoQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinkFlamingoQueue.app/PinkFlamingoQueue";
+			};
+			name = Release;
+		};
+		AE6D4D7E1C177F4E0048EF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinkFlamingoQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinkFlamingoQueue;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AE6D4D7F1C177F4E0048EF39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinkFlamingoQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafariBooks.PinkFlamingoQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinkFlamingoQueue;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE6D4D421C177F4E0048EF39 /* Build configuration list for PBXProject "PinkFlamingoQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D4D751C177F4E0048EF39 /* Debug */,
+				AE6D4D761C177F4E0048EF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6D4D771C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D4D781C177F4E0048EF39 /* Debug */,
+				AE6D4D791C177F4E0048EF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE6D4D7A1C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D4D7B1C177F4E0048EF39 /* Debug */,
+				AE6D4D7C1C177F4E0048EF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE6D4D7D1C177F4E0048EF39 /* Build configuration list for PBXNativeTarget "PinkFlamingoQueueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D4D7E1C177F4E0048EF39 /* Debug */,
+				AE6D4D7F1C177F4E0048EF39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE6D4D3F1C177F4E0048EF39 /* Project object */;
+}
