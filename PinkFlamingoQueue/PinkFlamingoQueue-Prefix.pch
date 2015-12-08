@@ -1,0 +1,14 @@
+//
+//  PinkFlamingoQueue-Prefix.pch
+//  PinkFlamingoQueue
+//
+//  Created by Peter Malmgren on 12/8/15.
+//  Copyright © 2015 Safari Books Online. All rights reserved.
+//
+
+#ifndef PinkFlamingoQueue_Prefix_pch
+#define PinkFlamingoQueue_Prefix_pch
+
+#define QueueAPIBaseURLString @"http://localhost:8000/api/"
+
+#endif /* PinkFlamingoQueue_Prefix_pch */

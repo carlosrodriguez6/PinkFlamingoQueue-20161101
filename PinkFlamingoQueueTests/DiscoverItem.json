@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "title": "Azure Dream",
+    "description": "",
+    "isbn": "1111111111111",
+    "authors": [
+                2
+                ],
+    "publisher": 1,
+    "cover": null
+}
