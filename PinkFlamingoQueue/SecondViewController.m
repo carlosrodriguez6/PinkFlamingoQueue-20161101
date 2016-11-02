@@ -40,6 +40,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    NSLog(@"Will appear");
+    
+    __weak typeof(self) welf = self;
+    
+    [_dataManager getQueueWithCallback:^(NSArray<QueueItem *> * _Nullable queue, NSError * _Nullable error) {
+        __strong typeof(welf) strongSelf = welf;
+        
+        strongSelf.queueItems = queue;
+        [strongSelf.tableView reloadData];
+    }];
+    
+}
+
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
