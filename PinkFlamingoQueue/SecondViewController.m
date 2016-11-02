@@ -81,4 +81,22 @@
     return @"Queued Items";
 }
 
+#pragma mark - Deleting
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return YES - we will be able to delete all rows
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    QueueItem* queueItem = [_queueItems objectAtIndex:indexPath.row];
+    /* Unfortunately passing in the queueItem causes a crash, but under normal circumstances I would delete
+     the row on the table after confirming the http delete call worked.
+    [_dataManager removeQueueWithItem:queueItem callback:^(NSError * _Nullable error) {
+        NSLog(@"Failed to remove item from queue due to %@",error.localizedDescription);
+    }];
+     */
+}
+
 @end

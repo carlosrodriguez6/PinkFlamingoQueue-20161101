@@ -32,12 +32,30 @@ class QueueAPIDataManager: NSObject, QueueAPIRequester {
     }
 
     private func queueDetailURLRequest(id: String) -> URLRequest {
-        let request = URLRequest(url: QueueAPIBaseURL.appendingPathComponent("queue").appendingPathComponent("\(id)", isDirectory: true))
+        let request = URLRequest(url: QueueAPIBaseURL.appendingPathComponent("queue").appendingPathComponent("\(id)",
+            isDirectory: true))
         return request
     }
 
     internal func removeQueue(item: QueueItem, callback: @escaping (NSError?) -> ()) {
         // TODO
+        //Unfortunately I can't figure out why I can't access the queueID property
+        //of the QueueItem instance, and I am loath to change the method signature of
+        //this call to more easily accomodate the id.
+        /*
+ 
+        let myID = item.queueID!
+        print(myID)
+        
+        var request = self.queueDetailURLRequest(id: item.queueID)
+        request.httpMethod = "DELETE"
+        request.setValue("application/json", forHTTPHeaderField: "content-type")
+        
+        let operation = AFHTTPRequestOperation(request: request)
+        //operation.responseSerializer = AFJSONResponseSerializer()
+        operation.start()
+         */
+        
     }
 
     internal func addQueue(itemID: String, callback: @escaping (QueueItem?, NSError?) -> ()) {
