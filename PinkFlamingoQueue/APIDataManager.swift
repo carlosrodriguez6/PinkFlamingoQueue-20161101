@@ -27,7 +27,7 @@ class QueueAPIDataManager: NSObject, QueueAPIRequester {
     }
 
     private func queueURLRequest() -> URLRequest {
-        let request = URLRequest(url: QueueAPIBaseURL.appendingPathComponent("queue/", isDirectory: true))
+        let request = URLRequest(url: QueueAPIBaseURL.appendingPathComponent("queue", isDirectory: true))
         return request
     }
 
