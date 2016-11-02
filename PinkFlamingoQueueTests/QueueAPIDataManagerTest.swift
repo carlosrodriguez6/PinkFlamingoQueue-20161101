@@ -80,7 +80,16 @@ class QueueAPIDataManagerTestCase: XCTestCase {
         dataManager!.addQueue(itemID: "12345") { (queueItem, error) in
             expectation.fulfill()
             XCTAssertNil(queueItem)
-            XCTAssertEqual(error!.code, 500)
+            /*
+             I am not terribly happy with this solution, as the "com.alamofire.serialization.response.error.response" key
+             might very well go away in the future. Getting the value of userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey], serializing that into a JSON dictionary and then getting the status code out of that might be more future proof but
+             the changes to JSONSerialization require handling the new signature with a checked exception and I simply don't have time.
+             Ultimately it would be more robust to actually write a custom serializer that explicitly added the response to the
+             user info as a sub-dictionary.
+            */
+            let response:HTTPURLResponse  = error?.userInfo["com.alamofire.serialization.response.error.response"] as! HTTPURLResponse
+            print(response.statusCode)
+            XCTAssertEqual(response.statusCode, 500)
         }
 
         waitForExpectations(timeout: 1.0) { (error) in
