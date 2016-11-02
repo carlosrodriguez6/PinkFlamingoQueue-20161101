@@ -63,7 +63,16 @@
     tableViewCell.addToQueueButton.tag = indexPath.row;
     [tableViewCell.addToQueueButton addTarget:self action:@selector(didSelectAddToQueue:) forControlEvents:UIControlEventTouchUpInside];
     
+    //When a custom cell gets dequeued, I don't think the constraints are automatically updated,
+    //but we are modifying the state of other UI components, so we have to recalculate constraints.
+    [tableViewCell.bookCoverImageView setNeedsUpdateConstraints];
+    
     return tableViewCell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    //I am almost positive that the
+    return NO;
 }
 
 #pragma mark - button

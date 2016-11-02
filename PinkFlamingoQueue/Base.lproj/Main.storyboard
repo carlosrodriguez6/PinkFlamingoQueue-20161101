@@ -34,13 +34,13 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiscoverTableCell" id="LeU-Lz-91A" customClass="DiscoverTableViewCell">
-                                        <rect key="frame" x="0.0" y="55.5" width="383" height="120"/>
+                                        <rect key="frame" x="0.0" y="56" width="383" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LeU-Lz-91A" id="fgq-XP-lDR">
-                                            <frame key="frameInset" width="350" height="119.5"/>
+                                            <frame key="frameInset" width="350" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank-book-md.png" translatesAutoresizingMaskIntoConstraints="NO" id="LYx-Wr-wE1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank-book-md.png" highlightedImage="blank-book-md.png" translatesAutoresizingMaskIntoConstraints="NO" id="LYx-Wr-wE1">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="79" id="Ibg-2M-ACQ"/>
                                                         <constraint firstAttribute="width" constant="53" id="k4X-dl-x6Z"/>
@@ -64,7 +64,6 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LYx-Wr-wE1" secondAttribute="bottom" constant="13" id="4YR-eG-lKn"/>
                                                 <constraint firstItem="LYx-Wr-wE1" firstAttribute="top" secondItem="XvL-kN-hL5" secondAttribute="top" id="Ktl-zg-uw4"/>
                                                 <constraint firstItem="LYx-Wr-wE1" firstAttribute="top" secondItem="fgq-XP-lDR" secondAttribute="topMargin" constant="12" id="SkB-eQ-H7M"/>
                                                 <constraint firstItem="Qhh-I1-8dt" firstAttribute="leading" secondItem="LYx-Wr-wE1" secondAttribute="trailing" constant="45" id="VDQ-pa-tpp"/>
@@ -135,10 +134,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QueueTableCell" id="9Pi-Ch-SSJ" customClass="QueueTableViewCell">
-                                        <rect key="frame" x="0.0" y="55.5" width="383" height="80"/>
+                                        <rect key="frame" x="0.0" y="56" width="383" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Pi-Ch-SSJ" id="4jZ-VC-DxW">
-                                            <frame key="frameInset" width="350" height="79.5"/>
+                                            <frame key="frameInset" width="350" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYN-tw-Hh8">
