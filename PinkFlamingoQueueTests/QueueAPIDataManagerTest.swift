@@ -88,7 +88,6 @@ class QueueAPIDataManagerTestCase: XCTestCase {
              user info as a sub-dictionary.
             */
             let response:HTTPURLResponse  = error?.userInfo["com.alamofire.serialization.response.error.response"] as! HTTPURLResponse
-            print(response.statusCode)
             XCTAssertEqual(response.statusCode, 500)
         }
 
