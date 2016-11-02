@@ -14,7 +14,7 @@
 @interface SecondViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) APIDataManager *dataManager;
-@property (strong, nonatomic) NSArray *queueItems;
+@property (strong, nonatomic) NSMutableArray *queueItems;
 
 @end
 
@@ -23,14 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _queueItems = @[];
+    _queueItems = [[NSMutableArray alloc] init];
     _dataManager = [[APIDataManager alloc] init];
     __weak typeof(self) welf = self;
 
     [_dataManager getQueueWithCallback:^(NSArray<QueueItem *> * _Nullable queue, NSError * _Nullable error) {
         __strong typeof(welf) strongSelf = welf;
 
-        strongSelf.queueItems = queue;
+        strongSelf.queueItems = [queue mutableCopy];
         [strongSelf.tableView reloadData];
     }];
 }
@@ -50,7 +50,7 @@
     [_dataManager getQueueWithCallback:^(NSArray<QueueItem *> * _Nullable queue, NSError * _Nullable error) {
         __strong typeof(welf) strongSelf = welf;
         
-        strongSelf.queueItems = queue;
+        strongSelf.queueItems = [queue mutableCopy];
         [strongSelf.tableView reloadData];
     }];
     
@@ -91,12 +91,19 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     QueueItem* queueItem = [_queueItems objectAtIndex:indexPath.row];
-    /* Unfortunately passing in the queueItem causes a crash, but under normal circumstances I would delete
-     the row on the table after confirming the http delete call worked.
+    
+    
+    /* Unfortunately passing in the queueItem causes a crash, but under normal circumstances I would delete */
+    
     [_dataManager removeQueueWithItem:queueItem callback:^(NSError * _Nullable error) {
-        NSLog(@"Failed to remove item from queue due to %@",error.localizedDescription);
+        if (error) {
+            NSLog(@"Failed to remove item from queue due to %@",error.localizedDescription);
+        }
+        else {
+            [_queueItems removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
     }];
-     */
 }
 
 @end

@@ -38,23 +38,27 @@ class QueueAPIDataManager: NSObject, QueueAPIRequester {
     }
 
     internal func removeQueue(item: QueueItem, callback: @escaping (NSError?) -> ()) {
-        // TODO
-        //Unfortunately I can't figure out why I can't access the queueID property
-        //of the QueueItem instance, and I am loath to change the method signature of
-        //this call to more easily accomodate the id.
-        /*
- 
-        let myID = item.queueID!
-        print(myID)
+        let queueItem: QueueItem = item
+        let queueId = queueItem.queueID as String
         
-        var request = self.queueDetailURLRequest(id: item.queueID)
+        var request = self.queueDetailURLRequest(id: queueId)
         request.httpMethod = "DELETE"
         request.setValue("application/json", forHTTPHeaderField: "content-type")
-        
         let operation = AFHTTPRequestOperation(request: request)
-        //operation.responseSerializer = AFJSONResponseSerializer()
+        
+        operation.setCompletionBlockWithSuccess({ (requestOperation, obj) in
+            guard let statusCode = requestOperation.response?.statusCode as Int?, statusCode <= 299 else {
+                return callback(requestOperation.error as NSError?)
+            }
+
+            callback(nil)
+            },
+            failure: {(_, error) in
+                callback(error as NSError)
+        })
+        
         operation.start()
-         */
+        
         
     }
 
